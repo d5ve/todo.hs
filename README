@@ -1,0 +1,51 @@
+DESCRIPTION
+
+    todo is my attempt to try a bit of Haskell for a simple, real-world task - maintaining my TODO text file.
+
+SYNOPSIS
+
+    todo <command> [ID|filter]
+
+        Commands:
+            add     <String>    - Add a new TODO.
+            delete  <ID>        - Mark an existing TODO as deleted - not as completed.
+            do      <ID>        - Mark an existing TODO as completed.
+            done    <String>    - Add a new TODO and immediately mark it as completed (add + do).
+            ls      [String]    - Print list of TODOs, optionally matching filter string.
+            help                - Print help text.
+
+        Example:
+            # Add a new TODO to the file.
+            todo add Pick up bananas on way home.
+
+            # List all outstanding TODOs.
+            todo ls
+
+            # List all outstanding TODOs containing the string Monday.
+            todo ls Monday
+
+            # Mark a TODO as completed.
+            todo do 4a8a
+
+            # Add a new, completed TODO.
+            todo done Cancel car insurance.
+
+SEE ALSO
+
+    todo.txt by Gina Trapani, http://todotxt.com/
+
+        todo.txt was the main inspiration for todo, and I used it for a couple of years. However, there were a couple of things that I couldn't get behaving as I wanted, and bash scripting isn't a strong point of mine. todo has a subset of the functionality of todo.txt, but it's the subset I used or wanted.
+    
+    t- by Colin Wright, http://www.penzba.co.uk/t-/
+
+        t- was my inspiration for actually writing my own script. It is a tiny python script offering the minimum functionlity that the author needed. I have never used it, but read the source and figured I could write something as simple in Haskell which did exactly what I wanted.
+
+AUTHOR
+
+Dave Webb todo.hs.github@d5ve.com
+
+LICENSE
+
+todo is free software. It comes without any warranty, to the extent permitted by applicable law.
+
+todo is released under the WTFPL Version 2.0 license - http://sam.zoy.org/wtfpl/COPYING
