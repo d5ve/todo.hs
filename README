@@ -32,6 +32,9 @@ SYNOPSIS
 
 SEE ALSO
 
+    todo.pl by same author, https://github.com/d5ve/todo.pl
+
+        
     todo.txt by Gina Trapani, http://todotxt.com/
 
         todo.txt was the main inspiration for todo, and I used it for a couple of years. However, there were a couple of things that I couldn't get behaving as I wanted, and bash scripting isn't a strong point of mine. todo has a subset of the functionality of todo.txt, but it's the subset I used or wanted.
